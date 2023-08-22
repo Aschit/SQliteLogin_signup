@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/img_1"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/img"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:text="welcome to Login and signup screen"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#FF9800"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_marginTop="60dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        android:drawableStart="@drawable/baseline_arrow_forward_24"
+        android:text="Login"
+        android:onClick="login"
+
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:onClick="signup"
+        android:layout_margin="20dp"
+
+
+        android:text="Signup"
+        android:textSize="30dp"
+
+
+        />
+
+
+</LinearLayout>

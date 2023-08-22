@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00E5FF"
+    android:orientation="vertical"
+
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textColorHint="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+
+
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview"
+        android:gravity="center"
+        android:layout_marginTop="11dp"
+        android:text=" welcome to LOgin Page"
+        android:textColor="#FF5722"
+        android:textSize="35dp"
+
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/img_2"
+        android:layout_below="@+id/textv1"
+        android:layout_centerHorizontal="true"/>
+    
+    <EditText
+
+        android:id="@+id/editemail"
+        android:layout_width="wrap_content"
+        android:textColor="#E53935"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:textSize="28dp"
+        android:focusable="true"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#FF9800"
+        android:hint="Enter your G-Mail:"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageview"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentEnd = "true" />
+    
+    <EditText
+        android:id="@+id/editpassword"
+        android:hint="Enter password"
+        android:textColor="#5E35B1"
+        android:textSize="30dp"
+        android:drawableStart="@drawable/baseline_content_paste_24"
+
+        android:layout_width="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/editname"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_alignRight="@+id/editname"
+        android:textColorHint="#ffff299f"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/show_hide_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="normal"
+        android:text="Show or Hide Password"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E53935"
+        android:layout_marginVertical="0dp"
+        android:layout_gravity="center"
+        android:text="Login"
+        android:onClick="login"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/forget"
+        android:shadowRadius="@integer/material_motion_duration_long_2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:textSize="25dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:onClick="forget"
+        android:textColor="@color/black"
+        android:background="#FFC400"
+
+
+
+
+        />
+
+
+
+
+
+
+</LinearLayout>
+
+
